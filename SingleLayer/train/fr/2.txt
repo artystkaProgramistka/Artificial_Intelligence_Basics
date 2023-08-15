@@ -1,0 +1,14 @@
+La page d'accueil est structurée en différentes parties.
+
+    Le texte de présentation de Wikipédia et l'introduction pour contribuer sont directement inclus dans le wikicode de la page d'accueil.
+    {{Accueil/Titre}} fournit la zone de titre en haut des pages d’accueil.
+    {{Accueil/Projets Wikimedia}} fournit le cadre des différents projets frères
+
+La page d’accueil et les modèles ci-dessus étant protégés, laissez un message sur cette présente page de discussion pour proposer une modification. (N'hésitez pas à prévenir ailleurs également)
+
+À cela s'ajoutent des éléments qui sont sélectionnés par la communauté et qui changent de jour en jour. (Référez-vous aux pages dédiées pour en savoir plus.)
+
+    Wikipédia:Le saviez-vous ? fournit le texte du cadre Le saviez-vous ?
+    {{Accueil actualité}} fournit le texte du cadre Actualités et évènements.
+    Wikipédia:Image du jour fournit l’image et sa description dans le cadre Image du jour.
+    {{Lumière sur/Accueil}} fournit le texte du cadre Lumière sur… (qu’on peut aussi appeler dans n’importe quelle autre page avec {{Lumière sur/Accueil/Aujourd'hui}}).

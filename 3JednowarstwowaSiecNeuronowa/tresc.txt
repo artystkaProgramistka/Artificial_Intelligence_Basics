@@ -1,0 +1,32 @@
+Stwórz 1-warstwową sieć neuronową, która jest w stanie rozpoznać język danego tekstu.
+
+Utwórz zbiory danych: traningowy i testowy.
+Zbiór treningowyy składa się z folderów z plikami tekstowymi w jednm języku. Każdy folder nosi nazwę skrótu języka, który reprezentuje. Każdy plik tekstowy zawiera inny tekst w języku określonym przez nazwę folderu.
+
+Na przykład:
+|-train
+| |-en
+| | |-1.txt
+| | |-2.txt
+| | |-3.txt
+| | |-4.txt
+| |-fr
+| | |-1.txt
+| | |-2.txt
+| | |-3.txt
+| | |-4.txt
+
+Utwórz około 3 różnych folderów językowych. Długość pojedynczego tekstu to około jednego lub dwóch akapitów. Zbiór testowy jest tworzony w podobny sposób, ale zawiera nowy zestaw plików (w tych samych językach co zbiór treningowy).
+
+Wejściem sieci jest wektor reprezentujący częstotliwość występowania każdej małej litery z ASCII (bez wielkich liter, znaków specjalnych itp.) w danym tekście.
+  Na przykład:
+jeśli plik en/1.txt zawiera tekst "hello!" wektor wejściowy powinien wyglądać następująco:
+
+[0,0,0,0,1,0,0,1,0,0,0,2,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0]
+
+Każdy neuron w warstwie reprezentuje jeden język.
+
+Wyjście pojedynczego neuronu powinno być liniowe. Wyjście całej sieci oparte jest na selektorze maksimum - oznacza to, że tylko jeden neuron jest aktywowany, ten który ma maksymalną wartość net ze wszystkich neuronów w warstwie.
+ Program powinien być uniwersalny i automatycznie rozpoznawać liczbę języków.
+Zapewnij interfejs użytkownika do wprowadzania krótkiego tekstu do klasyfikacji językowej.
+Możesz użyć normalizacji wektora wag, aby osiągnąć lepsze wyniki.

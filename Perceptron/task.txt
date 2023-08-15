@@ -1,0 +1,17 @@
+Implement a perceptron that recognizes 2 classes.
+
+Program arguments:
+
+    path to the training file
+    path to the test file
+    learning rate
+    number of epochs - one epoch is one iteration through all the training data
+
+The perceptron is trained using the delta rule for several epochs on the training data, and then it is tested on the test data.
+Report the accuracy on the test set after each epoch.
+
+The training data can be shuffled after each epoch to achieve better results.
+
+The program should be universal (similar to knn), it should work on any dimensions of numerical data except for the decision attribute, which can take exactly 2 nominal values.
+No external libraries are allowed for mathematical operations. You can use libraries for data reading, preprocessing, storage, shuffling, etc.
+Run the program on data from example2 and iris_perceptron separately.

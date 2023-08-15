@@ -1,0 +1,27 @@
+Create a 1-layer neural network that can recognize the language of a given text.
+
+Create data sets: training and testing.
+The training set consists of folders with text files in one language. Each folder is named after the language abbreviation it represents. Each text file contains different text in the language specified by the folder name.
+
+For example:
+|-train
+| |-en
+| | |-1.txt
+| | |-2.txt
+| | |-3.txt
+| | |-4.txt
+| |-fr
+| | |-1.txt
+| | |-2.txt
+| | |-3.txt
+| | |-4.txt
+
+Create about 3 different language folders. The length of a single text is about one or two paragraphs. The test set is created in a similar way but contains a new set of files (in the same languages as the training set).
+
+The network input is a vector representing the frequency of occurrence of each lowercase ASCII letter (without uppercase letters, special characters, etc.) in the given text.
+
+Each neuron in the layer represents one language.
+
+The output of a single neuron should be linear. The output of the entire network is based on the maximum selector - this means that only one neuron is activated, the one with the maximum net value among all neurons in the layer.
+The program should be universal and automatically recognize the number of languages.
+Provide a user interface for entering short text for language classification.
